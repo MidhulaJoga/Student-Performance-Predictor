@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register | Student Performance Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="nav">
+    AI-Based Student Performance Predictor
+</div>
+
+<div class="container">
+    <h2>Create New Account</h2>
+
+    <form action="/register" method="post">
+        <input type="text" name="username" placeholder="Choose Username" required>
+        <input type="password" name="password" placeholder="Choose Password" required>
+        <button type="submit">Register</button>
+    </form>
+
+    <p style="text-align:center; margin-top:15px;">
+        Already have an account?
+        <a href="/" style="color:#2c5364; font-weight:bold;">Login Here</a>
+    </p>
+</div>
+
+</body>
+</html>
